@@ -1,0 +1,8 @@
+Pixels - Pixel Art UI Kit
+
+Commercial use in games, apps and client work is allowed. You may modify the files.
+You may not resell or redistribute them as an asset pack, or ship them inside another
+pack or template.
+
+Generated procedurally with generative AI assistance. No third-party pixels or
+trademarks were used.

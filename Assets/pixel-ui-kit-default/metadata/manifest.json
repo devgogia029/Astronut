@@ -1,0 +1,20 @@
+{
+  "product": "Pixels - Pixel Art UI Kit",
+  "version": "1.0.0",
+  "pieces": 37,
+  "categories": [
+    "Button",
+    "Cursor",
+    "Gauge",
+    "Icon",
+    "Panel",
+    "Slot"
+  ],
+  "scales": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "note": "integer scaling only; 1x is the source of truth"
+}

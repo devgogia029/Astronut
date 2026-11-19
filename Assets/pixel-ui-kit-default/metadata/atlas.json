@@ -1,0 +1,326 @@
+{
+  "panel": {
+    "base_size": [
+      32,
+      32
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "panel-ornate": {
+    "base_size": [
+      32,
+      32
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "panel-inset": {
+    "base_size": [
+      32,
+      32
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "button-normal": {
+    "base_size": [
+      32,
+      16
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "button-hover": {
+    "base_size": [
+      32,
+      16
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "button-pressed": {
+    "base_size": [
+      32,
+      16
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "button-disabled": {
+    "base_size": [
+      32,
+      16
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "bar-health-100": {
+    "base_size": [
+      48,
+      10
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "bar-health-75": {
+    "base_size": [
+      48,
+      10
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "bar-health-50": {
+    "base_size": [
+      48,
+      10
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "bar-health-25": {
+    "base_size": [
+      48,
+      10
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "bar-mana-100": {
+    "base_size": [
+      48,
+      10
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "bar-mana-75": {
+    "base_size": [
+      48,
+      10
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "bar-mana-50": {
+    "base_size": [
+      48,
+      10
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "bar-mana-25": {
+    "base_size": [
+      48,
+      10
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "bar-stamina-100": {
+    "base_size": [
+      48,
+      10
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "bar-stamina-75": {
+    "base_size": [
+      48,
+      10
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "bar-stamina-50": {
+    "base_size": [
+      48,
+      10
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "bar-stamina-25": {
+    "base_size": [
+      48,
+      10
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "bar-xp-100": {
+    "base_size": [
+      48,
+      10
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "bar-xp-75": {
+    "base_size": [
+      48,
+      10
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "bar-xp-50": {
+    "base_size": [
+      48,
+      10
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "bar-xp-25": {
+    "base_size": [
+      48,
+      10
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "slot-normal": {
+    "base_size": [
+      16,
+      16
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "slot-selected": {
+    "base_size": [
+      16,
+      16
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "slot-empty": {
+    "base_size": [
+      16,
+      16
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "slot-large": {
+    "base_size": [
+      32,
+      32
+    ],
+    "insets_1x": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  }
+}
