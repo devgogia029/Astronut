@@ -3,6 +3,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuButtons : MonoBehaviour
 {
+    public GameObject exitButton;
+
+    void Start()
+    {
+        if (Application.platform == RuntimePlatform.WebGLPlayer)
+            exitButton.SetActive(false);
+    }
+
     public void StartGame()
     {
         AudioManager.Instance.PlayClick(); // plays sfx for button click
