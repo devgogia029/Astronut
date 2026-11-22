@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+
+    public float targetRotation; //angle the camera turns towards
+    public float rotateSpeed = 6f; // speed at which the camera flips
     private Camera mainCamera; //reference to the main camera; private so can't be changed in inspector
     public float targetSize; //the size the camera will zoom to; public so can be changed in the inspector
     public Vector3 targetPosition; //the position the camera is moving towards; public so can be changed in the inspector
@@ -18,11 +21,18 @@ public class CameraController : MonoBehaviour
     {
         transform.position = Vector3.Lerp(transform.position, targetPosition, smoothSpeed * Time.deltaTime); //moves the camera towards the target position smoothly
         mainCamera.orthographicSize = Mathf.Lerp(mainCamera.orthographicSize, targetSize, smoothSpeed * Time.deltaTime); //zooms the camera towards the target size smoothly
+        float z = Mathf.LerpAngle(transform.eulerAngles.z, targetRotation, rotateSpeed * Time.deltaTime);
+        transform.rotation = Quaternion.Euler(0f, 0f, z); //applies angle to camera
     }
     
     public void MoveTo(Vector3 newTarget, float newSize) //called by other scripts to move the camera to a new position
     {
         targetPosition = newTarget; //sets the target position to the new position
         targetSize = newSize; //sets the target size to the new size
+    }
+
+    public void FlipView(bool flipped)
+    {
+        targetRotation = flipped ? 180f : 0f;
     }
 }

@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+
+    private CameraController cam;
     private Animator animator; //reference to the players animator component; private so can't be changed in inspector
     private SpriteRenderer spriteRenderer; //reference to the players sprite renderer component; private so can't be changed in inspector
     private Rigidbody2D platformRb; //reference to the moving platform physics component; private so can't be changed in inspector
@@ -13,9 +15,11 @@ public class Player : MonoBehaviour
     public LayerMask groundLayer; //layer that counts as ground; i set in the inspector to "Ground" layer
     Rigidbody2D rb; //reference to the players physics component; private so can't be changed in inspector
     public bool isGrounded; //true when player touching ground or ceiling; false when in air
+    public bool flipLevelView; //switch ill tick level 3
 
     void Start()
     {
+        cam = FindAnyObjectByType<CameraController>();
         rb = GetComponent<Rigidbody2D>(); //finds the Rigidbody2D on the player object and stores in rb
         animator = GetComponent<Animator>(); //finds the Animator on the player object and stores in animator
         spriteRenderer = GetComponent<SpriteRenderer>(); //finds the SpriteRenderer on the player object and stores in spriteRenderer
@@ -25,7 +29,7 @@ public class Player : MonoBehaviour
     {
         if(Time.timeScale == 0f) //if the game is paused
             return; //skip the rest of the update method
-        float x = isDead ? 0f : Input.GetAxisRaw("Horizontal"); //gets input from left/right arrow keys or A/D keys;
+        float x = isDead ? 0f : Input.GetAxisRaw("Horizontal");//+1 or -1 when flipped so D will always be right;
         animator.SetBool("isRunning", x != 0); //sets the isRunning bool in the animator to true if x is not 0; false if x is 0
         if (x > 0) //if x is greater than 0 (player moving right)
             spriteRenderer.flipX = false; //sets the players sprite to face right
@@ -46,6 +50,8 @@ public class Player : MonoBehaviour
         AudioManager.Instance.PlayFlip(); //Plays gravity flip sfx
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * FlipVelocityKeep); //keeps some of the players vertical velocity when flipping gravity
         rb.gravityScale *= -1f; //flips the players gravity
+        if (flipLevelView)
+            cam.FlipView(rb.gravityScale < 0f);
         Vector3 s = transform.localScale; //gets the players current scale
         s.y *= -1f; //flips the players y scale
         transform.localScale = s; //sets the players scale to the new flipped scale
@@ -54,6 +60,8 @@ public class Player : MonoBehaviour
     public void ResetFlip() //resets the players gravity and scale to normal; called by the PlayerRespawn when the player dies
     {
         rb.gravityScale = Mathf.Abs(rb.gravityScale); //sets the players gravity to normal
+        if (flipLevelView)
+            cam.FlipView(false);
         Vector3 s = transform.localScale; //gets the players current scale
         s.y = Mathf.Abs(s.y); //sets the players y scale to normal
         transform.localScale = s; //sets the players scale to the new normal scale
