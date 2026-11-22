@@ -13,7 +13,7 @@ public class ResultsButtons : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("MainMenu"); //if the next scene doesn't exist, loads the main menu
+            SceneManager.LoadScene("Credits"); //if the next scene doesn't exist, loads the Credits
         }
     }
     
