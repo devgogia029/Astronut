@@ -1900,6 +1900,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ResultsScreen
   diamondsText: {fileID: 570381726}
   timeText: {fileID: 1058490049}
+  nextButtonText: {fileID: 1039139782}
 --- !u!4 &2068077863
 Transform:
   m_ObjectHideFlags: 0
