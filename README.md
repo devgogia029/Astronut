@@ -4,7 +4,11 @@ A 2D gravity-flip platformer made in Unity 6. One button flips gravity, at any t
 
 **[Play it in your browser on itch.io](https://devgogia.itch.io/astronut)**
 
-<!-- Add 2-3 screenshots or a GIF here, for example: ![Level 5](Screenshots/level5.png) -->
+![Main menu](media/main-menu.gif)
+
+![Level 1](media/level1-run.gif)
+
+![Level 2](media/level2-run.gif)
 
 ---
 
