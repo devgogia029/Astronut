@@ -82,7 +82,7 @@ Assets/
 - **Characters, diamond and tiles:** Free Space Runner Pack by MattWalkden (CC0)
 - **Portal animation:** FREE 2D Spaceships Pack by [author]
 - **Pixel UI kit:** [name and author]
-- **Space background:** [name and author]
+- **Space background:** https://edwardtheskull.itch.io/
 - **Font:** Public Pixel Font by GGBotNet ([license])
 - **Music and sound effects:** [sources and licenses]
 
