@@ -93,4 +93,4 @@ Made by **Dev**, [@devgogia029](https://github.com/devgogia029).
 
 ## License
 
-[Choose a license for the code, for example MIT.] Third-party assets keep their own licenses, listed above.
+This project's code is released under the MIT License. See the [LICENSE](LICENSE) file. Third-party assets keep their own licenses, listed in the Credits section above.
