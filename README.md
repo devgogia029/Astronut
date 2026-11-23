@@ -42,7 +42,6 @@ In the browser, click the game once first so it receives keyboard input and the 
 
 - Unity 6 (6000.4), 2D URP
 - C#
-- Old Input Manager
 - TextMeshPro
 
 ## Run it locally
