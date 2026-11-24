@@ -84,7 +84,7 @@ Assets/
 ## Credits and licenses
 
 - **Characters, diamond and tiles:** Free Space Runner Pack by MattWalkden (CC0)
-- **Portal animation:** FREE 2D Spaceships Pack by
+- **Portal animation:** FREE 2D Spaceships Pack by https://luissangueve.github.io/Panks-Creations/
 - **Space background:** https://edwardtheskull.itch.io/
 - **Font:** Public Pixel Font by GGBotNet
 - **Music and sound effects:** https://itch.io/profile/ci
