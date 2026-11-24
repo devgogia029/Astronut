@@ -4086,7 +4086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraController
   targetRotation: 0
-  rotateSpeed: 3
+  rotateSpeed: 5
   targetSize: 0
   targetPosition: {x: 0, y: 0, z: 0}
   smoothSpeed: 3
@@ -12761,7 +12761,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3343848404841688859, guid: 8396c54939159c147acda3ad849af16c, type: 3}
       propertyPath: flipLevelView
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4771410513819941945, guid: 8396c54939159c147acda3ad849af16c, type: 3}
       propertyPath: m_LocalPosition.x

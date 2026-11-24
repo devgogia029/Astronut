@@ -6,6 +6,7 @@ public class ResultsScreen : MonoBehaviour
     public TextMeshProUGUI diamondsText;
     public TextMeshProUGUI timeText;
     public TextMeshProUGUI nextButtonText; //the label on the next level button
+    public TextMeshProUGUI bestText; //shows the best time for this level
     
     void Start()
     {
@@ -20,6 +21,16 @@ public class ResultsScreen : MonoBehaviour
         if (Application.CanStreamedLevelBeLoaded(nextName)) //checks if that scene is in the build list
             nextButtonText.text = "NEXT LEVEL"; //another lvl exists, so the normal label
         else
-            nextButtonText.text = "CONTINUE"; //this was the last level 
+            nextButtonText.text = "CONTINUE"; //this was the last level
+        if (GameData.newBest) //checks if player beat old time score
+            bestText.text = "NEW BEST! " + FormatTime(GameData.bestTime); //celebrate it
+        else
+            bestText.text = "BEST " + FormatTime(GameData.bestTime); //otherwise show best
+    }
+
+    string FormatTime(float t)
+    {
+        int minutes = (int)(t / 60f); //whole minutes
+        return string.Format("{0:00}:{1:00.00}", minutes, t % 60f); //for example 00:12.34
     }
 }

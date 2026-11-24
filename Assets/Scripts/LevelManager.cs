@@ -47,6 +47,15 @@ public class LevelManager : MonoBehaviour
         GameData.diamondsCollected = collectedDiamonds;
         GameData.diamondsTotal = totalDiamonds;
         AudioManager.Instance.PlayLevelComplete(); //plays sfx for completing the level
+        string key = "Best Time_" + levelNumber; //the saved-data name for this level
+        float oldBest = PlayerPrefs.GetFloat(key, -1f); //loads the saved best time; -1 means none saved yet
+        GameData.newBest = oldBest > 0f && levelTime < oldBest; //true only when an existing best is broken
+        if (oldBest < 0f || levelTime < oldBest) //first finish, or faster than the old best
+        {
+            PlayerPrefs.SetFloat(key, levelTime); //saves the new best
+            PlayerPrefs.Save(); //writes it to storage right away, which WebGL needs
+        }
+        GameData.bestTime = PlayerPrefs.GetFloat(key); //passes the best time to the results screen
         SceneManager.LoadScene("LevelComplete");
     }
 }
