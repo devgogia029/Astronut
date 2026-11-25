@@ -8,4 +8,8 @@ public static class GameData
     public static int diamondsTotal; //the total number of diamonds in the level
     public static float bestTime; //the best time saved for the level
     public static bool newBest; //true when the level just finished beat an older best time
+    public static string BestKey(int level) //builds the saved-data name for a levels best time, in one place so it can never be spelled two ways
+    {
+        return "BestTime_" + level; //for eg BestTime_3
+    }
 }

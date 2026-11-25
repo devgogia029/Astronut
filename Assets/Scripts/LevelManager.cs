@@ -11,11 +11,20 @@ public class LevelManager : MonoBehaviour
     public TextMeshProUGUI diamondText; //reference to the diamond text object in the UI
     public int totalDiamonds; //total number of diamonds in the level, counted automatically
     public int collectedDiamonds; //number of diamonds collected by the player
+    public TextMeshProUGUI bestText; //shows the saved best time for current level
 
     void Start()
     {
         totalDiamonds = GameObject.FindGameObjectsWithTag("Diamond").Length; //finds all objects with the tag "Diamond" and counts them
         UpdateText(); //updates the diamond text in the UI
+        string key = GameData.BestKey(levelNumber); //the saved-data name for this levels bes time, the same name CompletelLevel uses
+        if (PlayerPrefs.HasKey(key))
+        {
+            float best = PlayerPrefs.GetFloat(key); //loads the saved best time
+            bestText.text = "BEST " + string.Format("{0:00}:{1:00.00}", (int)(best / 60f), best % 60f); //shows in format MM:SS.ss
+        }
+        else
+            bestText.text = "BEST --:--.--"; //placeholder until the first finish
     }
     public void CollectDiamond() //called by the Diamond script when the player collects a diamond
     {
@@ -47,7 +56,7 @@ public class LevelManager : MonoBehaviour
         GameData.diamondsCollected = collectedDiamonds;
         GameData.diamondsTotal = totalDiamonds;
         AudioManager.Instance.PlayLevelComplete(); //plays sfx for completing the level
-        string key = "Best Time_" + levelNumber; //the saved-data name for this level
+        string key = GameData.BestKey(levelNumber); //the saved-data name for this level
         float oldBest = PlayerPrefs.GetFloat(key, -1f); //loads the saved best time; -1 means none saved yet
         GameData.newBest = oldBest > 0f && levelTime < oldBest; //true only when an existing best is broken
         if (oldBest < 0f || levelTime < oldBest) //first finish, or faster than the old best
