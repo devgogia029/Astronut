@@ -2296,12 +2296,6 @@ MonoBehaviour:
   targetSize: 0
   targetPosition: {x: 0, y: 0, z: 0}
   smoothSpeed: 3
-  player: {fileID: 0}
-  sidewaysSize: 5.5
-  roomHalfWidth: 17.78
-  roomHalfHeight: 10
-  quarterFollowSpeed: 14
-  lookAhead: 0.08
 --- !u!1001 &547456030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7596,21 +7590,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1463868679711391369, guid: 8396c54939159c147acda3ad849af16c, type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343848404841688859, guid: 8396c54939159c147acda3ad849af16c, type: 3}
-      propertyPath: turnSpeed
-      value: 360
-      objectReference: {fileID: 0}
     - target: {fileID: 3343848404841688859, guid: 8396c54939159c147acda3ad849af16c, type: 3}
       propertyPath: flipLevelView
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343848404841688859, guid: 8396c54939159c147acda3ad849af16c, type: 3}
-      propertyPath: quarterTurnMode
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4771410513819941945, guid: 8396c54939159c147acda3ad849af16c, type: 3}
       propertyPath: m_LocalPosition.x
