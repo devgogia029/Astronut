@@ -14,6 +14,8 @@ A 2D gravity-flip platformer made in Unity 6. One button flips gravity, at any t
 
 ## About
 
+Built for Github's Game Off 2026 (theme : SHIFT).
+
 Astronut is a solo project: all the code, levels and game design were made by me. The astronaut can flip gravity whenever he likes. Each flip keeps a little of his vertical speed, so timing a flip in mid-air is the core skill. Every level has diamonds to collect. The portal stays locked until you have all of them.
 
 Dying sends you back to the last checkpoint, but the clock keeps running, so every mistake counts if you are going for a fast time.
@@ -23,7 +25,8 @@ Dying sends you back to the last checkpoint, but the clock keeps running, so eve
 | Key | Action |
 |---|---|
 | **A / D** or **Left / Right** | Move |
-| **Space** | Flip gravity (works in mid-air) |
+| **Space** | Levels 1-2: flip gravity. Levels 3-5: turn the level 90° right |
+| **Shift** | Levels 3-5: turn the level 90° left |
 | **R** | Restart the level |
 | **Esc** | Pause |
 
@@ -33,14 +36,15 @@ In the browser, click the game once first so it receives keyboard input and the 
 
 ## Features
 
-- Mid-air gravity flip that keeps a fraction of your vertical speed
+- Two gravity mechanics: a classic mid-air flip in Levels 1-2, then 90° level turns in Levels 3-5, where the camera rotates and zooms with the astronaut
 - 5 hand-built levels, each split into two screens with a smooth camera glide and an automatic checkpoint
 - Hazards: static spikes, patrolling spike strips, moving platforms, and pits (floor and ceiling holes in Level 5)
 - Diamond counter that fills in automatically, with a portal that stays locked until all diamonds are collected
-- Speedrun-style timer that keeps running through deaths, plus a results screen with your time and diamonds
+- Best times saved per level and shown in the HUD and on the results screen
 - Pause menu, level restart, main menu, and rolling end credits
 - Pixel-art visuals, music, and sound effects
 - Runs in the browser as a WebGL build
+- In-game hint bubbles that follow the astronaut
 
 ## Built with
 
