@@ -1376,6 +1376,8 @@ MonoBehaviour:
   sidewaysSize: 5.5
   roomHalfWidth: 17.78
   roomHalfHeight: 10
+  quarterFollowSpeed: 14
+  lookAhead: 0.08
 --- !u!1 &523541513
 GameObject:
   m_ObjectHideFlags: 0
@@ -2898,7 +2900,7 @@ MonoBehaviour:
 
     Space = SHIFT Gravity'
   dismissOn: 1
-  showSeconds: 5
+  showSeconds: 6
 --- !u!61 &1772771942
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4145,14 +4147,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3343848404841688859, guid: 8396c54939159c147acda3ad849af16c, type: 3}
-      propertyPath: turnSpeed
-      value: 270
-      objectReference: {fileID: 0}
-    - target: {fileID: 3343848404841688859, guid: 8396c54939159c147acda3ad849af16c, type: 3}
-      propertyPath: quarterTurnMode
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4771410513819941945, guid: 8396c54939159c147acda3ad849af16c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7
